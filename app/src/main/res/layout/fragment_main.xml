@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/start_connect_activity_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call Activity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/start_custom_call_fragment_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom call fragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_connect_activity_button" />
+
+    <Button
+        android:id="@+id/start_websocket_test_fragment_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Websocket test fragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_custom_call_fragment_button" />
+
+</android.support.constraint.ConstraintLayout>
